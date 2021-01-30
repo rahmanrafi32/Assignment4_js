@@ -10,10 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <!-- Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -33,12 +30,12 @@
     <!--Booking Section-->
     <main id="main" class="main-content container">
 
-        <div class="booking-content">
+        <div class="booking-content ">
             <h1>Cruise Queen</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book./p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book./p>
         </div>
-
-
         <div class="booking-form">
             <h3>Book Ocean Time</h3>
             <div class="input-group">
@@ -52,7 +49,7 @@
             <div class="inputs">
                 <div class="input-group">
                     <label" for="">Departure</label>
-                    <input class="inp-style" type="date" name="">
+                        <input class="inp-style" type="date" name="">
                 </div>
                 <div class="input-group">
                     <label for="">Return</label>
@@ -62,18 +59,18 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($150)</label>
-                    <input  id="firstClass" class="inp-style inp-width" type="number" name="" value="0">
+                    <input id="firstClass" class="inp-style inp-width" type="number" name="" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                        <button id="minusButton" class="btn btn-default">
-                          <i class="fas fa-minus"></i>
-                        </button>
-                        <button id="plusButton" class="btn btn-default">
-                          <i class="fas fa-plus"></i>
-                        </button>
-                      </div>
+                    <button id="minusButton" class="btn btn-default">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button id="plusButton" class="btn btn-default">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
             </div>
-            
+
             <div class="input-group f-class">
                 <div>
                     <label for="">Economy ($100)</label>
@@ -82,10 +79,10 @@
                 <div class="plus-minus-btn">
                     <button id="minusButtonE" class="btn btn-default">
                         <i class="fas fa-minus"></i>
-                      </button>
-                      <button id="plusButtonE" class="btn btn-default">
+                    </button>
+                    <button id="plusButtonE" class="btn btn-default">
                         <i class="fas fa-plus"></i>
-                      </button>
+                    </button>
                 </div>
             </div>
             <div class="calculations">
@@ -119,6 +116,24 @@
             <button id="submitButton" class="btn-style">Book Now</button>
         </div>
     </main>
+    <section id="ticketSum" class="ticketSummary">
+        <div>
+            <h1 style="color: white; padding: 20px;">Your Purchase Summary</h1>
+        </div>
+        <div class="form">
+            <form action="#">
+                <label style="color: white;" for="firstClassCoach">First Class Ticket</label>
+                <input style="text-align: right; padding: 10px;" type="text" id="firstClassCoach">
+                <label style="color: white;" for="economyClassCoach">Economy Class Ticket</label>
+                <input style="text-align: right; padding: 10px;" type="text" id="economyClassCoach">
+                <label style="color: white;" for="lname">Total fare</label>
+                <input style="text-align: right; padding: 10px;" type="text" id="fare">
+            </form>
+        </div>
+
+
+
+    </section>
 
     <!--Thank You-->
 

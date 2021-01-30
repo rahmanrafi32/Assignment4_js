@@ -1,8 +1,8 @@
 //getting button, coach and checking if the button is incrementing or decrementing
 function buttonClicked(buttonId, classId, increment) {
     const button = document.getElementById(buttonId).addEventListener('click', function () {
-        const ticketQty = document.getElementById(classId).value; //ticketQty = ticketQuantity.
-        const convertQty = parseFloat(ticketQty); //convertQty = convertQuantity.
+        const ticketQty = document.getElementById(classId).value;
+        const convertQty = parseFloat(ticketQty);
         let newCount = convertQty;
         //incrementing and decrementing ticket quantity and setting limit to decreaseButton
         if (increment == true) {
@@ -61,6 +61,17 @@ buttonClicked('plusButton', 'firstClass', true);
 buttonClicked('minusButtonE', 'economyClass', false);
 buttonClicked('plusButtonE', 'economyClass', true);
 
+//book now button
 const bookNowBtn = document.getElementById('submitButton').addEventListener('click', function () {
+    document.getElementById('main').style.display = "none";
+    document.getElementById('ticketSum').style.display = "block"
+    //getting ticket quantity
+    const FirstClassQty = getCoach('firstClass');
+    const economyClassQty = getCoach('economyClass');
+    //assigning value to purchase summary
+    const firstClassTicket = document.getElementById('firstClassCoach').value = FirstClassQty;
+    const economyClassTicket = document.getElementById('economyClassCoach').value = economyClassQty;
+    const totalFare = document.getElementById('totalCost').innerText;
+    document.getElementById('fare').value = totalFare;
 
 })
