@@ -72,6 +72,6 @@ const bookNowBtn = document.getElementById('submitButton').addEventListener('cli
     const firstClassTicket = document.getElementById('firstClassCoach').value = FirstClassQty;
     const economyClassTicket = document.getElementById('economyClassCoach').value = economyClassQty;
     const totalFare = document.getElementById('totalCost').innerText;
-    document.getElementById('fare').value = totalFare;
+    document.getElementById('fare').value = '$' + totalFare;
 
 })
