@@ -2,7 +2,7 @@
 function buttonClicked(buttonId, classId, increment) {
     const button = document.getElementById(buttonId).addEventListener('click', function () {
         const ticketQty = document.getElementById(classId).value;
-        const convertQty = parseFloat(ticketQty);
+        const convertQty = parseInt(ticketQty);
         let newCount = convertQty;
         //incrementing and decrementing ticket quantity and setting limit to decreaseButton
         if (increment == true) {
@@ -27,7 +27,7 @@ function buttonClicked(buttonId, classId, increment) {
 //calculating subTotal.
 function subTotal(id, quantity, cost) {
     const initialSub = document.getElementById(id).innerText;
-    const convertSubValue = parseFloat(initialSub);
+    const convertSubValue = parseInt(initialSub);
     const subtotal = quantity * cost;
     document.getElementById(id).innerText = subtotal;
 }
